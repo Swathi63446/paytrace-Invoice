@@ -1,0 +1,20 @@
+[project]
+name = "invoice-processor-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-auth>=2.62.0",
+    "google-cloud-documentai>=3.16.0",
+    "google-genai",
+    "pydantic",
+    "langgraph",
+    "python-dotenv",
+    "gspread",
+    "google-api-python-client",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+    "pytest",
+    "scikit-learn>=1.9.1",
+]

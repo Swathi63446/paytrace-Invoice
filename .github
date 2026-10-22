@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment & Dependencies
+.venv/
+venv/
+ENV/
+env/
+.uv/
+
+# Secrets & Environment Configuration (CRITICAL FOR OAUTH & ADC)
+secrets/
+.env
+.env.*
+*.env
+*.json
+!pyproject.toml
+!package.json
+
+# Exceptions: Ignore all JSON files above BUT DO NOT ignore config/schema files if needed
+# specifically protecting OAuth tokens & credentials from Git commit:
+secrets/credentials.json
+secrets/authorized_user.json
+secrets/gmail_token.json
+secrets/token.json
+secrets/service_account.json
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+junit/
+*.xml
+
+# IDEs & System Files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary files
+*.log
+logs/
+tmp/
+*.tmp
